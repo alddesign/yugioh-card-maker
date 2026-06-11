@@ -1,0 +1,125 @@
+/* #region main */
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+h1
+{
+	margin: 0;
+	font-family: "YugiohMonsterType", Arial, sans-serif;
+}
+
+h2,h3,h4,h5
+{
+	font-family: "YugiohMonsterType", Arial, sans-serif;
+	margin-bottom: 1rem;
+}
+
+legend
+{
+	display: inline;
+	font-size: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+ol,ul,dl
+{
+	padding-left: 1rem;
+}
+
+.fullwidth 
+{
+	width: 100%;
+}
+
+#canvas
+{
+	zoom: .75;
+	cursor: move;
+}
+
+#link-grid
+{
+	display: grid;
+	grid-template-columns: 16px 16px 16px;
+	gap: 16px;
+}
+
+@media (max-width: 1366px) 
+{
+	#canvas
+	{
+		zoom: .55;
+	}
+}
+
+@media (max-width: 576px) 
+{
+	#canvas
+	{
+		zoom: .45;
+	}
+}
+
+@media (max-width: 767px) 
+{
+	#form .form-group
+	{
+		margin-bottom: 0;
+	}
+	#form .form-group > *
+	{
+		margin-bottom: 1rem;
+	}
+}
+/* #endregion */
+
+/* #region theme */
+body.dark
+{
+	--fg: #fafafa;
+	--bg: #222;
+	--placeholder: #fff6;
+
+	background-color:var(--bg);
+	color: var(--fg);
+}
+
+body.dark hr
+{
+	border-color: var(--fg);
+}
+
+body.dark .form-control
+{
+	background-color: transparent;
+	border-color: var(--fg);
+	color: var(--fg);
+}
+
+body.dark .form-control::placeholder
+{
+	color: var(--placeholder);
+}
+
+body.dark .custom-file-label
+{
+	background-color: transparent;
+	color: var(--placeholder);
+}
+
+body.dark .custom-file-label::after
+{
+	color: var(--bg);
+	background-color: var(--fg);
+}
+
+body.dark .input-group-text
+{
+	color:var(--bg);
+	background-color: var(--fg);
+}
+/* #endregion */
