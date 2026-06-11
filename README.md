@@ -1,5 +1,5 @@
 # Yu-Gi-Oh! Card Maker
-Yet another Yugioh card maker.
+A Yugioh card maker written in pure JS and PHP.
 
-## Notes
-Base Images are lossless WEPB.
+## Try it
+Try it at https://yugioh.alddesign.at/
